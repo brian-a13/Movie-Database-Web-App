@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fabflix Mobile</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="action_sign_in_short">LOGIN</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >2 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="fabflix">Fabflix</string>
+    <string name="prompt_movie">Movie Title</string>
+    <string name="action_search_movie">Search</string>
+    <string name="prev"><![CDATA[<-Prev]]></string>
+    <string name="zero">0</string>
+    <string name="next"><![CDATA[Next->]]></string>
+    <string name="title">Title Placeholder</string>
+    <string name="rating">Rating Placeholder</string>
+    <string name="year">Year Placeholder</string>
+    <string name="director">Director Placeholder</string>
+    <string name="stars">Star1, Star2, Star3, Star4, Star5, Star6, Star7, Star8</string>
+    <string name="genres">Genre1, Genre2, Genre3, Genre 4, Genre 5, Genre 6</string>
+    <string name="back">Back to Search</string>
+</resources>

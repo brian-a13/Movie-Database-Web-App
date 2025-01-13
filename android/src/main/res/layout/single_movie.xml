@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingLeft="@dimen/activity_horizontal_margin"
+       android:paddingTop="@dimen/activity_vertical_margin"
+       android:paddingRight="@dimen/activity_horizontal_margin"
+       android:paddingBottom="@dimen/activity_vertical_margin"
+       tools:context=".ui.singlemovie.SingleMovieActivity">
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/red"
+            android:textSize="35sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="28dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rating"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+    />
+
+    <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/rating"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+    />
+
+    <TextView
+            android:id="@+id/director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/director"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/year"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genres"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/director"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stars"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/genres"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+    />
+
+<!--  Make a button that goes back to the activity_movielist page  -->
+    <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/stars"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

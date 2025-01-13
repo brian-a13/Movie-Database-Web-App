@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:id="@+id/container"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:paddingLeft="@dimen/activity_horizontal_margin"
+                                                   android:paddingTop="@dimen/activity_vertical_margin"
+                                                   android:paddingRight="@dimen/activity_horizontal_margin"
+                                                   android:paddingBottom="@dimen/activity_vertical_margin"
+                                                   tools:context=".ui.login.LoginActivity">
+
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fabflix"
+            android:textColor="@color/red"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="132dp"
+            app:layout_constraintHorizontal_bias="0.498"/>
+    <EditText
+            android:id="@+id/movieSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/prompt_movie"
+            android:imeActionLabel="@string/action_search_movie"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"/>
+    <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/action_search_movie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movieSearch"
+            app:layout_constraintVertical_bias="0.081"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

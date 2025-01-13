@@ -1,0 +1,55 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Global CSS  -->
+    <link rel="stylesheet" href="global.css">
+
+    <title>Checkout</title>
+</head>
+<body>
+<div class="page-content">
+    <div class="page-header-section">
+        <h1 class="page-header">Payment Information</h1>
+    </div>
+    <div class="form-card">
+        <form class="form-section" id="payment_form" method="post" action="#">
+            <div class="form-area">
+                <label for="card_num" class="form-label">Number:</label>
+                <input id="card_num" class="form-input" name="card_num" placeholder="Card Number" type="text"/>
+            </div>
+            <div class="form-area">
+                <label for="first_name" class="form-label">First Name:</label>
+                <input id="first_name" class="form-input" name="first_name" placeholder="First Name" type="text"/>
+            </div>
+            <div class="form-area">
+                <label for="last_name" class="form-label">Last Name:</label>
+                <input id="last_name" class="form-input" name="last_name" placeholder="Last Name" type="text"/>
+            </div>
+            <div class="form-area">
+                <label for="expire_date" class="form-label">Expiration:</label>
+                <input id="expire_date" class="form-input" name="expire_date" placeholder="yyyy/mm/dd" type="text"/>
+            </div>
+            <div class="text-center">
+                <p style="margin-top: 10px "><strong id="subtotal">Subtotal: $0</strong></p>
+            </div>
+            <input class="form-button" type="submit" value="Place Order"/>
+        </form>
+    </div>
+    <div class="error-message" id="payment_error_message"></div>
+</div>
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- include our own JS file -->
+<script src="payment.js"></script>
+
+</body>
+</html>
